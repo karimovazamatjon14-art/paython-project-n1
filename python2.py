@@ -17,6 +17,7 @@ print("                          ")
 number = random.randint(1,100)
 tries = 10
 print("you have 10 tries")
+print("number is 1,100")
 while tries > 0:
     guess = int(input("your turn:"))
     tries -= 1

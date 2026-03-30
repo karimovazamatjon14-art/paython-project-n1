@@ -14,6 +14,7 @@ else:
 print("GUES THE NUMBER")
 
 print("EASY ROUND")
+print("C")
 import random
 print("                          ")
 number = random.randint(1,50)
@@ -35,14 +36,17 @@ if tries == 0:
     print("you lose number was:", number)
 print("again")
 
+
+
+
 print("MIDLE MEDIUM ROUND")
-print("NEXT GAME")
+print("C+")
 import random
+print("                          ")
 number = random.randint(1,100)
 tries = 10
 print("you have 10 tries")
 print("number is 1,100")
-
 while tries > 0:
     guess = int(input("your turn:"))
     tries -= 1
@@ -51,20 +55,23 @@ while tries > 0:
     elif guess < number:
         print("small")
     else:
-        print("you won")
+        print("you won:",name)
         break
     print("you have",tries,"tries")
 if tries == 0:
     print("you lose number was:", number)
-    tries = 10
+print("again")
 
 
-print("MEDIUM ROUND")
-print("NEXT GAME")
+
+print(" MEDIUM ROUND")
+print("B")
 import random
-number = random.randint(1,300)
+print("                          ")
+number = random.randint(1,500)
+tries = 10
 print("you have 10 tries")
-print("number is 1,300")
+print("number is 1,500")
 while tries > 0:
     guess = int(input("your turn:"))
     tries -= 1
@@ -73,16 +80,20 @@ while tries > 0:
     elif guess < number:
         print("small")
     else:
-        print("you won")
+        print("you won:",name)
         break
     print("you have",tries,"tries")
 if tries == 0:
     print("you lose number was:", number)
+print("again")
 
 
-print("HARD ROUND!")
-print("NEXT GAME")
+
+print("!HARD ROUND!")
+print("A")
+
 import random
+print("                          ")
 number = random.randint(1,1000)
 tries = 10
 print("you have 10 tries")
@@ -91,36 +102,99 @@ while tries > 0:
     guess = int(input("your turn:"))
     tries -= 1
     if guess > number:
-        print("BIG")
+        print("big")
     elif guess < number:
-        print("SMALL")
+        print("small")
     else:
-        print("YOU WON",name)
+        print("you won:",name)
         break
-    print("YOU HAVE",tries,"TRIES")
+    print("you have",tries,"tries")
 if tries == 0:
     print("you lose number was:", number)
+print("again")
 
 
-print("!!!!EXTREME ROUND!!!!")
- print("NEXT GAME")
+print("!!SUPER HARD ROUND!!")
+print("S")
+
 import random
+print("                          ")
+number = random.randint(1,2000)
 tries = 10
 print("you have 10 tries")
-number = random.randint(1,1500)
+print("number is 1,2000")
+while tries > 0:
+    guess = int(input("your turn:"))
+    tries -= 1
+    if guess > number:
+        print("big")
+    elif guess < number:
+        print("small")
+    else:
+        print("you won:",name)
+        break
+    print("you have",tries,"tries")
+if tries == 0:
+    print("you lose number was:", number)
+print("again")
+
+
+
+
+print("!!!EXTREME ROUND!!!")
+print("SS")
+
+import random
+print("                          ")
+number = random.randint(1,5000)
+tries = 10
+print("you have 10 tries")
 print("number is 1,5000")
 while tries > 0:
     guess = int(input("your turn:"))
     tries -= 1
     if guess > number:
-        print("BIG")
+        print("big")
     elif guess < number:
-        print("SMALL")
+        print("small")
     else:
-        print("YOU WON",name)
+        print("you won:",name)
         break
     print("you have",tries,"tries")
 if tries == 0:
     print("you lose number was:", number)
+print("again")
+
+
+
+
+
+
+print("!!!INPOSSIBLE ROUND!!!")
+print("SS+")
+
+import random
+print("                          ")
+number = random.randint(1,100000)
+tries = 10
+print("you have 10 tries")
+print("number is 1,100000")
+while tries > 0:
+    guess = int(input("your turn:"))
+    tries -= 1
+    if guess > number:
+        print("big")
+    elif guess < number:
+        print("small")
+    else:
+        print("you won:",name)
+        break
+    print("you have",tries,"tries")
+if tries == 0:
+    print("you lose number was:", number)
+print("again")
+
+
+
 print("GAMES END, NEW GAMES BE SOON")
 print("BYE",name)

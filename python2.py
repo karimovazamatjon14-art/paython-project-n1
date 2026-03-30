@@ -32,7 +32,7 @@ if tries == 0:
     print("you lose number was:", number)
 print("again")
 
-
+import random
 number = random.randint(1,100)
 tries = 10
 print("you have 10 tries")
@@ -50,6 +50,9 @@ while tries > 0:
 if tries == 0:
     print("you lose number was:", number)
     tries = 10
+
+
+import random
 print("you have 10 tries")
 while tries > 0:
     guess = int(input("your turn:"))
@@ -64,6 +67,8 @@ while tries > 0:
     print("you have",tries,"tries")
 if tries == 0:
     print("you lose number was:", number)
+
+import random
 tries = 10
 print("you have 10 tries")
 while tries > 0:

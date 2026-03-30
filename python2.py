@@ -80,7 +80,7 @@ if tries == 0:
     print("you lose number was:", number)
 
 
-print("HARD ROUND!)
+print("HARD ROUND!")
 print("NEXT GAME")
 import random
 number = random.randint(1,1000)
@@ -103,7 +103,7 @@ if tries == 0:
 
 
 print("!!!!EXTREME ROUND!!!!")
-    print("NEXT GAME")
+ print("NEXT GAME")
 import random
 tries = 10
 print("you have 10 tries")

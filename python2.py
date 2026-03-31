@@ -6,12 +6,23 @@ if age >= 18:
     print("OK")
 else:
     print("NO")
-answer = input("DO YOU WANT PLAY A game,(yes/no):")
+    answer = input("DO YOU WANT PLAY A game,(yes/no):")
 if answer == "yes":
     print("LETS PLAY:",name)
 else:
     print("OH OK BUT YOU WILL:)")
 print("GUES THE NUMBER")
+print("you shold guess the number")
+print("at start you have 10 tries on 1 game")
+print("the game has modes ")
+print("c,b,a,s,ss and sss+")
+print("        .")
+print("        .")
+print("         .")
+print("      .")
+print("         .")
+print("       .")
+print("         .")
 
 print("EASY ROUND")
 print("C")

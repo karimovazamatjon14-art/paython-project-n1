@@ -357,8 +357,18 @@ def play_again():
 
 
 
-
-
+while True:
+    print("----MENU----")
+    print("1 - GAME 1")
+    print("2 - GAME 2")
+    print("3 - GAME 3")
+    print("4 - GAME 4")
+    print("5 - GAME 5")
+    print("6 - GAME 6")
+    print("7 - GAME 7")
+    print("8 - GAME 8")
+    print("0 - GAME 0")
+    
 
 
 

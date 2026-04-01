@@ -432,7 +432,7 @@ while True:
             game8()
             if not play_again():
                 break
-
-
+  elif choise == "0":
+      print("BYE")
 
                 

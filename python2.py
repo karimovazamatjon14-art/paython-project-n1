@@ -370,14 +370,69 @@ while True:
     print("0 - GAME 0")
     
 
+    choise = input("choose:")
+    if choise == "1":
+        while True:
+            game1()
+            if not play_again():
+                break
 
 
 
+    
+    elif choise == "2":
+                while True:
+            game2()
+            if not play_again():
+                break
+
+
+  elif choise == "3":
+                while True:
+            game3()
+            if not play_again():
+                break
 
 
 
+  elif choise == "4":
+                while True:
+            game4()
+            if not play_again():
+                break
 
 
 
+  elif choise == "5":
+                while True:
+            game5()
+            if not play_again():
+                break
 
 
+
+  elif choise == "6":
+                while True:
+            game6()
+            if not play_again():
+                break
+
+
+
+  elif choise == "7":
+                while True:
+            game7()
+            if not play_again():
+                break
+
+
+
+  elif choise == "8":
+                while True:
+            game8()
+            if not play_again():
+                break
+
+
+
+                

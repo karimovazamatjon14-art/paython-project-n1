@@ -24,7 +24,8 @@ print("      .")
 print("         .")
 print("       .")
 print("         .")
-
+def game1():
+    print("game 1")
 print("EASY ROUND")
 print("C")
 print("WIN TO TAKE 3 Azamat_game_points")
@@ -52,7 +53,8 @@ print("again")
 
 
 
-
+def game2():
+    print("game 2")
 print("MIDLE MEDIUM ROUND")
 print("C+")
 print("WIN TO TAKE 6 Azamat_game_points")
@@ -76,9 +78,11 @@ while tries > 0:
     print("you have",tries,"tries")
 if tries == 0:
     print("you lose number was:", number)
-print("again")
+    
 
 
+def game3():
+    print("game 3")
 print(" MEDIUM ROUND")
 print("B")
 print("WIN TO TAKE 10 Azamat_game_points")
@@ -102,10 +106,11 @@ while tries > 0:
     print("you have",tries,"tries")
 if tries == 0:
     print("you lose number was:", number)
-print("again")
+  
 
 
-
+def game4():
+    print("game 4")
 print("!HARD ROUND!")
 print("A")
 print("WIN TO TAKE 3=15 Azamat_game_points")
@@ -131,7 +136,8 @@ if tries == 0:
     print("you lose number was:", number)
 print("again")
 
-
+def game5():
+    print("game 5")
 print("!!SUPER HARD ROUND!!")
 print("S")
 print("WIN TO TAKE 18 Azamat_game_points")
@@ -158,7 +164,8 @@ if tries == 0:
 print("again")
 
 
-
+def game6():
+    print("game 6")
 
 print("!!!EXTREME ROUND!!!")
 print("SS")
@@ -188,7 +195,8 @@ print("again")
 
 
 
-
+def game7():
+    print("game 7")
 
 print("!!!INPOSSIBLE ROUND!!!")
 print("SS+")
@@ -215,7 +223,15 @@ if tries == 0:
     print("you lose number was:", number)
 print("again")
 
+
+def game8():
+    print("game 8")
+
+
 print("!!!NEW GAME!!!")
+
+
+
 
 tries = 5
 stage = 1

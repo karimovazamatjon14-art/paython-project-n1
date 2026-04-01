@@ -51,6 +51,20 @@ if tries == 0:
     print("you lose number was:", number)
 print("again")
 
+def play_again():
+    while True:
+        choise = input("1 - replay,  2- menu")
+         if choise =="1":
+             return True
+         elif choise == "2":
+             return False
+                        
+
+
+
+
+
+
 
 
 def game2():
@@ -79,6 +93,19 @@ while tries > 0:
 if tries == 0:
     print("you lose number was:", number)
     
+def play_again():
+    while True:
+        choise = input("1 - replay,  2- menu")
+         if choise =="1":
+             return True
+         elif choise == "2":
+             return False
+
+
+
+
+
+
 
 
 def game3():
@@ -108,6 +135,16 @@ if tries == 0:
     print("you lose number was:", number)
   
 
+def play_again():
+    while True:
+        choise = input("1 - replay,  2- menu")
+         if choise =="1":
+             return True
+         elif choise == "2":
+             return False
+
+
+
 
 def game4():
     print("game 4")
@@ -135,6 +172,18 @@ while tries > 0:
 if tries == 0:
     print("you lose number was:", number)
 print("again")
+
+def play_again():
+    while True:
+        choise = input("1 - replay,  2- menu")
+         if choise =="1":
+             return True
+         elif choise == "2":
+             return False
+
+
+
+
 
 def game5():
     print("game 5")
@@ -164,6 +213,19 @@ if tries == 0:
 print("again")
 
 
+def play_again():
+    while True:
+        choise = input("1 - replay,  2- menu")
+         if choise =="1":
+             return True
+         elif choise == "2":
+             return False
+
+
+
+
+
+
 def game6():
     print("game 6")
 
@@ -191,6 +253,19 @@ while tries > 0:
 if tries == 0:
     print("you lose number was:", number)
 print("again")
+
+
+
+def play_again():
+    while True:
+        choise = input("1 - replay,  2- menu")
+         if choise =="1":
+             return True
+         elif choise == "2":
+             return False
+
+
+
 
 
 
@@ -224,10 +299,21 @@ if tries == 0:
 print("again")
 
 
+def play_again():
+    while True:
+        choise = input("1 - replay,  2- menu")
+         if choise =="1":
+             return True
+         elif choise == "2":
+             return False
+
+
+
 def game8():
     print("game 8")
 
 
+             
 print("!!!NEW GAME!!!")
 
 
@@ -258,6 +344,13 @@ if stage == 50:
     Azamat_game_points += 200
    
 
+def play_again():
+    while True:
+        choise = input("1 - replay,  2- menu")
+         if choise =="1":
+             return True
+         elif choise == "2":
+             return False
 
 
 
@@ -269,9 +362,6 @@ if stage == 50:
 
 
 
-
-print("GAMES END, NEW GAMES BE SOON")
-print("BYE",name)
 
 
 

@@ -1,427 +1,151 @@
-name = input("your name:")
-print("HI:",name)
+import random
 
-age = int(input("how old are you:"))
+name = input("your name: ")
+print("HI:", name)
+
+age = int(input("how old are you: "))
 if age >= 18:
     print("OK")
 else:
     print("NO")
-    answer = input("DO YOU WANT PLAY A game,(yes/no):")
-if answer == "yes":
-    print("LETS PLAY:",name)
-else:
-    print("OH OK BUT YOU WILL:)")
+    answer = input("DO YOU WANT PLAY A game (yes/no): ")
+    if answer != "yes":
+        print("OH OK BUT YOU WILL :)")
+        exit()
+
 Azamat_game_points = 0
 
-def game1():
-    print("game 1")
-print("EASY ROUND")
-print("C")
-print("WIN TO TAKE 3 Azamat_game_points")
-import random
-print("                          ")
-number = random.randint(1,50)
-tries = 10
-print("you have 10 tries")
-print("number is 1,50")
-while tries > 0:
-    guess = int(input("your turn:"))
-    tries -= 1
-    if guess > number:
-        print("big")
-    elif guess < number:
-        print("small")
-    else:
-        print("you won:",name)
-        Azamat_game_points += 3
-        break
-    print("you have",tries,"tries")
-if tries == 0:
-    print("you lose number was:", number)
-print("again")
 
 def play_again():
     while True:
-        choise = input("1 - replay,  2- menu")
-         if choise =="1":
-             return True
-         elif choise == "2":
-             return False
-                        
+        choice = input("1 - replay, 2 - menu: ")
+        if choice == "1":
+            return True
+        elif choice == "2":
+            return False
 
 
+def guess_game(max_number, points):
+    global Azamat_game_points
 
+    number = random.randint(1, max_number)
+    tries = 10
 
+    print(f"number is 1-{max_number}")
+    print("you have 10 tries")
 
+    while tries > 0:
+        guess = int(input("your turn: "))
+        tries -= 1
 
+        if guess > number:
+            print("big")
+        elif guess < number:
+            print("small")
+        else:
+            print("you won:", name)
+            Azamat_game_points += points
+            return
 
+        print("you have", tries, "tries")
 
-def game2():
-    print("game 2")
-print("MIDLE MEDIUM ROUND")
-print("C+")
-print("WIN TO TAKE 6 Azamat_game_points")
-import random
-print("                          ")
-number = random.randint(1,100)
-tries = 10
-print("you have 10 tries")
-print("number is 1,100")
-while tries > 0:
-    guess = int(input("your turn:"))
-    tries -= 1
-    if guess > number:
-        print("big")
-    elif guess < number:
-        print("small")
-    else:
-        print("you won:",name)
-        Azamat_game_points += 6
-        break
-    print("you have",tries,"tries")
-if tries == 0:
-    print("you lose number was:", number)
-    
-def play_again():
-    while True:
-        choise = input("1 - replay,  2- menu")
-         if choise =="1":
-             return True
-         elif choise == "2":
-             return False
-
-
-
-
-
-
-
-
-def game3():
-    print("game 3")
-print(" MEDIUM ROUND")
-print("B")
-print("WIN TO TAKE 10 Azamat_game_points")
-import random
-print("                          ")
-number = random.randint(1,500)
-tries = 10
-print("you have 10 tries")
-print("number is 1,500")
-while tries > 0:
-    guess = int(input("your turn:"))
-    tries -= 1
-    if guess > number:
-        print("big")
-    elif guess < number:
-        print("small")
-    else:
-        print("you won:",name)
-        Azamat_game_points += 10
-        break
-    print("you have",tries,"tries")
-if tries == 0:
-    print("you lose number was:", number)
-  
-
-def play_again():
-    while True:
-        choise = input("1 - replay,  2- menu")
-         if choise =="1":
-             return True
-         elif choise == "2":
-             return False
-
-
-
-
-def game4():
-    print("game 4")
-print("!HARD ROUND!")
-print("A")
-print("WIN TO TAKE 3=15 Azamat_game_points")
-import random
-print("                          ")
-number = random.randint(1,1000)
-tries = 10
-print("you have 10 tries")
-print("number is 1,1000")
-while tries > 0:
-    guess = int(input("your turn:"))
-    tries -= 1
-    if guess > number:
-        print("big")
-    elif guess < number:
-        print("small")
-    else:
-        print("you won:",name)
-        Azamat_game_points += 15
-        break
-    print("you have",tries,"tries")
-if tries == 0:
-    print("you lose number was:", number)
-print("again")
-
-def play_again():
-    while True:
-        choise = input("1 - replay,  2- menu")
-         if choise =="1":
-             return True
-         elif choise == "2":
-             return False
-
-
-
-
-
-def game5():
-    print("game 5")
-print("!!SUPER HARD ROUND!!")
-print("S")
-print("WIN TO TAKE 18 Azamat_game_points")
-import random
-print("                          ")
-number = random.randint(1,2000)
-tries = 10
-print("you have 10 tries")
-print("number is 1,2000")
-while tries > 0:
-    guess = int(input("your turn:"))
-    tries -= 1
-    if guess > number:
-        print("big")
-    elif guess < number:
-        print("small")
-    else:
-        print("you won:",name)
-        Azamat_game_points += 18
-        break
-    print("you have",tries,"tries")
-if tries == 0:
-    print("you lose number was:", number)
-print("again")
-
-
-def play_again():
-    while True:
-        choise = input("1 - replay,  2- menu")
-         if choise =="1":
-             return True
-         elif choise == "2":
-             return False
-
-
-
-
-
-
-def game6():
-    print("game 6")
-
-print("!!!EXTREME ROUND!!!")
-print("SS")
-print("WIN TO TAKE 35 Azamat_game_points")
-import random
-print("                          ")
-number = random.randint(1,5000)
-tries = 10
-print("you have 10 tries")
-print("number is 1,5000")
-while tries > 0:
-    guess = int(input("your turn:"))
-    tries -= 1
-    if guess > number:
-        print("big")
-    elif guess < number:
-        print("small")
-    else:
-        print("you won:",name)
-        Azamat_game_points += 35
-        break
-    print("you have",tries,"tries")
-if tries == 0:
-    print("you lose number was:", number)
-print("again")
-
-
-
-def play_again():
-    while True:
-        choise = input("1 - replay,  2- menu")
-         if choise =="1":
-             return True
-         elif choise == "2":
-             return False
-
-
-
-
-
-
-
-def game7():
-    print("game 7")
-
-print("!!!INPOSSIBLE ROUND!!!")
-print("SS+")
-print("WIN TO TAKE 100 Azamat_game_points")
-import random
-print("                          ")
-number = random.randint(1,100000)
-tries = 10
-print("you have 10 tries")
-print("number is 1,100000")
-while tries > 0:
-    guess = int(input("your turn:"))
-    tries -= 1
-    if guess > number:
-        print("big")
-    elif guess < number:
-        print("small")
-    else:
-        print("you won:",name)
-        Azamat_game_points += 100
-        break
-    print("you have",tries,"tries")
-if tries == 0:
-    print("you lose number was:", number)
-print("again")
-
-
-def play_again():
-    while True:
-        choise = input("1 - replay,  2- menu")
-         if choise =="1":
-             return True
-         elif choise == "2":
-             return False
-
+    print("you lose, number was:", number)
 
 
 def game8():
-    print("game 8")
+    global Azamat_game_points
 
+    tries = 5
+    stage = 1
 
-             
-print("!!!NEW GAME!!!")
+    print("YOU HAVE 50% CHANCE")
+    print("50 STAGES")
 
+    while tries > 0 and stage <= 50:
+        number = random.randint(1, 2)
+        n = int(input("1 or 2: "))
 
+        if n == number:
+            print("GREAT")
+        else:
+            print("WRONG")
+            tries -= 1
 
+        stage += 1
+        print("stage:", stage)
+        print("tries:", tries)
 
-tries = 5
-stage = 1
-print("YOU HAVE 50% CHANSE TO CHOOSE CORRECT NUMBER")
-print("!!!THE GAME HAS 50 STAGES!!!")
-print("WIN TO GET 200 Azamat_game_points")
-while tries > 0:
-    import random
-    number = random.randint(1,2)
-    n = int(input("1 or 2:"))
-    if n == number:
-        print("!!!!!!!GREAT!!!!!!")
-        
+    if stage > 50:
+        print("YOU WON!")
+        Azamat_game_points += 200
     else:
-        print("!!!!NOOOOOOO!!!!")
-        tries -= 1
-    stage += 1
-    print("YOU ARE ON",stage,"STAGE")
-    print("YOU HAVE",tries,"TRIES")
-if tries == 0:
-    print("GAME OVER YOU WAS ON",stage,"STAGE")
-if stage == 50:
-    print("you won")
-    Azamat_game_points += 200
-   
-
-def play_again():
-    while True:
-        choise = input("1 - replay,  2- menu")
-         if choise =="1":
-             return True
-         elif choise == "2":
-             return False
-
-
-
-
+        print("GAME OVER")
 
 
 while True:
-    print("----MENU----")
-    print("1 - GAME 1")
-    print("2 - GAME 2")
-    print("3 - GAME 3")
-    print("4 - GAME 4")
-    print("5 - GAME 5")
-    print("6 - GAME 6")
-    print("7 - GAME 7")
-    print("8 - GAME 8")
-    print("0 - GAME 0")
-    
+    print("\n----MENU----")
+    print("1 - EASY (1-50)")
+    print("2 - MEDIUM (1-100)")
+    print("3 - HARD (1-500)")
+    print("4 - VERY HARD (1-1000)")
+    print("5 - SUPER HARD (1-2000)")
+    print("6 - EXTREME (1-5000)")
+    print("7 - IMPOSSIBLE (1-100000)")
+    print("8 - SPECIAL GAME")
+    print("0 - EXIT")
 
-    choise = input("choose:")
-    if choise == "1":
+    choice = input("choose: ")
+
+    if choice == "1":
         while True:
-            game1()
+            guess_game(50, 3)
             if not play_again():
                 break
 
-
-
-    
-    elif choise == "2":
-                while True:
-            game2()
+    elif choice == "2":
+        while True:
+            guess_game(100, 6)
             if not play_again():
                 break
 
-
-  elif choise == "3":
-                while True:
-            game3()
+    elif choice == "3":
+        while True:
+            guess_game(500, 10)
             if not play_again():
                 break
 
-
-
-  elif choise == "4":
-                while True:
-            game4()
+    elif choice == "4":
+        while True:
+            guess_game(1000, 15)
             if not play_again():
                 break
 
-
-
-  elif choise == "5":
-                while True:
-            game5()
+    elif choice == "5":
+        while True:
+            guess_game(2000, 18)
             if not play_again():
                 break
 
-
-
-  elif choise == "6":
-                while True:
-            game6()
+    elif choice == "6":
+        while True:
+            guess_game(5000, 35)
             if not play_again():
                 break
 
-
-
-  elif choise == "7":
-                while True:
-            game7()
+    elif choice == "7":
+        while True:
+            guess_game(100000, 100)
             if not play_again():
                 break
 
-
-
-  elif choise == "8":
-                while True:
+    elif choice == "8":
+        while True:
             game8()
             if not play_again():
                 break
-  elif choise == "0":
-      print("BYE")
 
-                
+    elif choice == "0":
+        print("BYE")
+        break
+
+

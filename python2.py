@@ -12,18 +12,7 @@ if answer == "yes":
 else:
     print("OH OK BUT YOU WILL:)")
 Azamat_game_points = 0
-print("GUES THE NUMBER")
-print("you shold guess the number")
-print("at start you have 10 tries on 1 game")
-print("the game has modes ")
-print("c,b,a,s,ss and sss+")
-print("        .")
-print("        .")
-print("         .")
-print("      .")
-print("         .")
-print("       .")
-print("         .")
+
 def game1():
     print("game 1")
 print("EASY ROUND")
